@@ -1,0 +1,32 @@
+.btn-lucu {
+  position: absolute;
+  bottom: 60px;
+  left: 50%;
+  transform: translateX(-50%);
+  
+  padding: 16px 40px;
+  font-size: 20px;
+  color: white;
+  border: none;
+  border-radius: 40px;
+  background: linear-gradient(135deg, #ff5fa2, #ff9a9e);
+
+  box-shadow:
+    0 0 20px rgba(255,95,162,.8),
+    0 0 40px rgba(255,154,158,.6);
+
+  animation: pulse 1.8s infinite;
+  cursor: pointer;
+}
+
+@keyframes pulse {
+  0% { box-shadow: 0 0 15px #ff5fa2; }
+  50% { box-shadow: 0 0 40px #ff9a9e; }
+  100% { box-shadow: 0 0 15px #ff5fa2; }
+}
+
+.fade-out {
+  opacity: 0;
+  transform: translateX(-50%) scale(.9);
+  transition: all .8s ease;
+}
